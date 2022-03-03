@@ -5,9 +5,7 @@ export default function Form() {
         <input className="topInput" placeholder="Top Line" />
         <input className="bottomInput" placeholder="Bottom Line" />
       </span>
-      <button className="generate" type="submit">
-        Get a new meme image 🖼
-      </button>
+      <button className="generate">Get a new meme image 😂</button>
     </div>
   );
 }

@@ -1,6 +1,9 @@
 .App {
   width: 550px;
   height: 550px;
+  border: 1px solid #672280;
+  margin: 0px;
+  background-color: #ffffff;
 }
 .Header {
   width: auto;
@@ -18,7 +21,7 @@
 .title {
   margin-left: 9px;
   margin-top: 18px;
-  font-family: Karla;
+  font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -36,4 +39,47 @@
   color: #ffffff;
   margin-right: 37px;
   margin-top: 22px;
+}
+.form {
+  width: 477px;
+  margin-top: 36px;
+  align-items: center;
+  margin-left: 36px;
+}
+.inputs {
+  display: flex;
+}
+.topInput {
+  width: 230px;
+  height: 35px;
+  border: 1px solid #d5d4d8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-indent: 5px;
+}
+.bottomInput {
+  width: 230px;
+  height: 35px;
+  margin-left: 17px;
+  border: 1px dotted #d5d4d8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-indent: 5px;
+}
+.generate {
+  width: 477px;
+  height: 40px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  margin-top: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
