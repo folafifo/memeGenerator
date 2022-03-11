@@ -9,9 +9,12 @@ export default function Form() {
   const [memes, setMemesData] = React.useState([]);
 
   React.useEffect(() => {
-    fetch(`https://api.imgflip.com/get_memes`)
-      .then((res) => res.json())
-      .then((data) => setMemesData(data.data.memes));
+    async function getMemes() {
+      const res = await fetch(`https://api.imgflip.com/get_memes`);
+      const retrieve = await res.json();
+      setMemesData(retrieve.data.memes);
+    }
+    getMemes();
   }, []);
 
   function handleClick() {
